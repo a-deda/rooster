@@ -12,7 +12,7 @@ class Population:
         fitness = [x.calculateFitness() for x in self.schedules]
         percentage = [x / sum(fitness) for x in fitness]
         for i, item in enumerate(percentage):
-            for i2 in range(int(item * 10000)):
+            for j in range(int(item * 10000)):
                 self.matingPool.append(self.schedules[i])
         return self
 

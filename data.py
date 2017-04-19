@@ -21,6 +21,7 @@ class Data:
             newCourse = Course(row[0], students, row[3])
             self.courses.append(newCourse)
 
+
         # Set rooms with sizes
         room1 = Room(1, 41)
         room2 = Room(2, 22)
